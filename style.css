@@ -1,0 +1,286 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #356221;
+    color: white;
+    padding: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item {
+    margin-right: 10px;
+}
+
+/* Navbar styles */
+nav {
+    color: black;
+    padding: 10px;
+}
+
+.navbar-row a {
+    color: #86e95b;
+    text-decoration: none;
+}
+
+.navbar-row {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #949292;
+}
+
+.navbar-item {
+    margin-right: 10px;
+}
+
+/* Search styles */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.searchTerm {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.searchButton {
+    border-color: rgb(255, 255, 255);
+    background-color: #356221;
+    color: black;
+    border-radius: 3px;
+    padding: 15px 10px;
+}
+
+/* Media query for mobile phones - Header & Navbar*/
+@media only screen and (max-width: 600px) {
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-item,
+    .search {
+        margin: 5px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navbar-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-item {
+        margin: 5px 0;
+    }
+}
+
+/* Article layout */
+article {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Grid section */
+.grid-section {
+    flex: 1;
+    margin-left: 50px;
+}
+
+/* Side pictures section */
+.side-pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-pictures img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+/* Card section */
+.card-section {
+    margin: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 0 18%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #356221;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #b3d9a3;
+}
+
+.card h1 {
+    color: #356221;
+    font-size: smaller;
+    font-style: italic;
+}
+
+/* Media query for mobile phones - Banner & Card Section*/
+@media screen and (max-width: 768px) {
+    article {
+        flex-direction: column; 
+    }
+
+    .grid-section {
+        margin-left: 0;
+    }
+
+    .side-pictures {
+        flex-direction: column; 
+        margin-bottom: 20px; 
+    }
+
+    .side-pictures img {
+        margin: 0 5px; 
+    }
+
+    .card-section {
+        margin: 20px; 
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 0 40%; 
+        margin: 10px; 
+    }
+}
+
+
+/* Glide carousel container */
+.carousel {
+    background-color: #f0f0f0;
+}
+
+.carousel-indicators {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.carousel-indicators button {
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc; 
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    background-color: #333; 
+}
+
+.glide-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glide-container h2 {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+/* Slide images */
+.glide__slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Controller buttons */
+.glide__arrow {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Left arrow */
+.glide__arrow--left {
+    left: 5px;
+}
+
+/* Right arrow */
+.glide__arrow--right {
+    right:5px;
+}
+
+/* Hover effect */
+.glide__arrow:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #356221;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
